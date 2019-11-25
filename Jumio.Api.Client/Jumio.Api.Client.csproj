@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AspNet.WebApi.Client" Version="1.1.0" />
-    <PackageReference Include="NSwag.MSBuild" Version="13.1.3" PrivateAssets="all" />
+    <PackageReference Include="NSwag.MSBuild" Version="13.1.6" PrivateAssets="all" />
   </ItemGroup>
   <Target Name="TempFiles" BeforeTargets="NSwag">
     <Touch Files="./Netverify/Client.generated.cs" AlwaysCreate="true" />
