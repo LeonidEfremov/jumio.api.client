@@ -5,7 +5,7 @@
     <IsPackable>True</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="AspNet.WebApi.Client" Version="1.1.0" />
+    <PackageReference Include="AspNet.WebApi.Client" Version="1.2.0" />
     <PackageReference Include="NSwag.MSBuild" Version="13.4.2" PrivateAssets="all" />
   </ItemGroup>
   <Target Name="TempFiles" BeforeTargets="NSwag">
