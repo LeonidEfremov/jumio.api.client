@@ -10,7 +10,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xUnit.Asserts.Compare" Version="1.0.0.4" />
+    <PackageReference Include="xUnit.Asserts.Compare" Version="1.0.0.5" />
     <PackageReference Include="xunit.analyzers" Version="0.10.0" PrivateAssets="all" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
