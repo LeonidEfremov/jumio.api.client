@@ -15,7 +15,7 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
     <PackageReference Include="TeamCity.VSTest.TestAdapter" Version="1.0.23" />
-    <PackageReference Include="coverlet.msbuild" Version="2.9.0" />
+    <PackageReference Include="coverlet.msbuild" Version="3.0.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Jumio.Api.Client\Jumio.Api.Client.csproj" />
