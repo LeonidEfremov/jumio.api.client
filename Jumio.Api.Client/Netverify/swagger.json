@@ -1616,10 +1616,7 @@
 				],
 				"responses": {
 					"200": {
-						"description": "OK",
-						"content": {
-							"application/json": {}
-						}
+						"description": "OK"
 					}
 				}
 			}
@@ -1825,10 +1822,7 @@
 				],
 				"responses": {
 					"200": {
-						"description": "OK",
-						"content": {
-							"application/json": {}
-						}
+						"description": "OK"
 					}
 				}
 			}

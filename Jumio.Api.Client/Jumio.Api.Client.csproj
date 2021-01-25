@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net5.0</TargetFrameworks>
     <RootNamespace>Jumio.Api</RootNamespace>
     <IsPackable>True</IsPackable>
+		<LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="AspNet.WebApi.Client" Version="1.2.0" />
+    <PackageReference Include="AspNet.WebApi.Client" Version="1.3.0" />
     <PackageReference Include="NSwag.MSBuild" Version="13.10.1" PrivateAssets="all" />
   </ItemGroup>
   <Target Name="TempFiles" BeforeTargets="NSwag">
@@ -16,9 +17,6 @@
     <Content Include="appsettings.json" copyToOutput="true" includeInPackage="true" />
   </ItemGroup>
   <Target Name="NSwag" BeforeTargets="CoreCompile">
-    <Exec Command="$(NSwagExe_Core22) run /variables:Configuration=$(Configuration),RootNamespace=$(RootNamespace)" />
-  </Target>
-  <Target Name="SetTeamcityBuildNumber" BeforeTargets="BeforeBuild">
-    <Message Text="##teamcity[buildNumber '$(PackageVersion)']" Importance="high" />
+		<Exec Command="$(NSwagExe_Net50) run /variables:Configuration=$(Configuration),RootNamespace=$(RootNamespace)" />
   </Target>
 </Project>

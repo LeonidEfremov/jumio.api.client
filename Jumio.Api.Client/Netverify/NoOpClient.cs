@@ -18,11 +18,11 @@ namespace Jumio.Api.Netverify
         public async Task DeleteScanAsync(Guid scanReference, CancellationToken cancellationToken) =>
             await Task.CompletedTask;
 
-        public async Task<string> GetDocImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint) =>
+        public async Task<FileResponse> GetDocImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint) =>
             await GetDocImageAsync(scanReference, classifier, maskhint, CancellationToken.None);
 
-        public async Task<string> GetDocImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint, CancellationToken cancellationToken) =>
-            await Task.FromResult(Guid.NewGuid().ToString());
+        public async Task<FileResponse> GetDocImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint, CancellationToken cancellationToken) =>
+            await Task.FromResult(default(FileResponse));
 
         public async Task<Images> GetDocImagesAsync(Guid scanReference) =>
             await GetDocImagesAsync(scanReference, CancellationToken.None);
@@ -66,11 +66,11 @@ namespace Jumio.Api.Netverify
         public async Task<ScanDocumentData> GetScanDocumentDataOnlyAsync(Guid scanReference, CancellationToken cancellationToken) =>
             await Task.FromResult(default(ScanDocumentData));
 
-        public async Task<string> GetScanImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint) =>
+        public async Task<FileResponse> GetScanImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint) =>
             await GetScanImageAsync(scanReference, classifier, maskhint, CancellationToken.None);
 
-        public async Task<string> GetScanImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint, CancellationToken cancellationToken) =>
-            await Task.FromResult(default(string));
+        public async Task<FileResponse> GetScanImageAsync(Guid scanReference, Classifier classifier, Maskhint? maskhint, CancellationToken cancellationToken) =>
+            await Task.FromResult(default(FileResponse));
 
         public async Task<Images> GetScanImagesAsync(Guid scanReference) =>
             await GetScanImagesAsync(scanReference, CancellationToken.None);
