@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.2</TargetFrameworks>
+    <TargetFramework>net6.0</TargetFramework>
     <IsPackable>False</IsPackable>
     <RootNamespace>Jumio.Api.Tests</RootNamespace>
   </PropertyGroup>
