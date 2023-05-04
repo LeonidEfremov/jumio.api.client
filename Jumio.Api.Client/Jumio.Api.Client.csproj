@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Jumio.Api</RootNamespace>
@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AspNet.WebApi.Client" Version="1.5.0" />
-    <PackageReference Include="NSwag.MSBuild" Version="13.18.2" PrivateAssets="all" />
+    <PackageReference Include="NSwag.MSBuild" Version="13.18.5" PrivateAssets="all" />
   </ItemGroup>
   <Target Name="TempFiles" BeforeTargets="NSwag">
     <Touch Files="./Netverify/Client.generated.cs" AlwaysCreate="true" />
